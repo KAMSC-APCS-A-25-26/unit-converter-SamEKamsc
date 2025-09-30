@@ -40,6 +40,9 @@ public class TempConverter {
                     System.out.println("Goodbye!");
                     running = false;
                     break;
+                default:
+                    System.out.println("Please enter valid option.");
+                    break;
             }
         }
         // TODO: Implement temperature converter
