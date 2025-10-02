@@ -12,7 +12,7 @@ public class TempConverter {
             // - Use formulas: C = (F - 32) * 5/9 and F = C * 9/5 + 32
             // - Display conversion results
             // - Handle invalid menu choices
-            System.out.println("Choose Conversion Direction:");
+            System.out.println("Choose conversion direction");
             System.out.println("1. Convert Fahrenheit to Celsius");
             System.out.println("2. Convert Celsius to Fahrenheit");
             System.out.println("3. Exit\n");
@@ -25,7 +25,7 @@ public class TempConverter {
                     double fah = sc.nextDouble();
                     System.out.println("\n");
                     System.out.println("Conversion Results:");
-                    System.out.println("Fahrenheit" + fah);
+                    System.out.println("Fahrenheit: " + fah);
                     System.out.println("Celsius: " + ((fah-32) * 5/9) + "\n");
                     break;
                 case 2:
@@ -41,7 +41,7 @@ public class TempConverter {
                     running = false;
                     break;
                 default:
-                    System.out.println("Please enter valid option.");
+                    System.out.println("Invalid choice, Please enter 1, 2, or 3");
                     break;
             }
         }
